@@ -2,8 +2,8 @@
   publish = "public"
   functions = "netlify/functions"
 [[redirects]]
-  from = "/r/:code"
-  to = "/.netlify/functions/redirect?code=:code"
+  from = "/r/*"
+  to = "/.netlify/functions/redirect?code=:splat"
   status = 200
   force = true
 [[redirects]]
